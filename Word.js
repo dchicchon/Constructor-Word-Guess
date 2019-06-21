@@ -1,7 +1,25 @@
 var Letter = require("./Letter")
 
-var Word = function() {
+console.log(Letter)
 
-}
+var something = new Letter('a')
+console.log(something)
 
-module.exports = Word
+
+something.letterGuessed()
+
+something.checkLetter('a')
+something.letterGuessed()
+
+// something.letterGuessed()
+
+
+// // Create an object representing the current word the user is attempting to guess. 
+// var Word = function() {
+//     this.letterObjs = []; // represents the letters of the underlying word. Like "hello" in this array would look like ['h','e','l','l','o']
+//     this.word = function() {
+//     }
+    
+// }
+
+// module.exports = Word
