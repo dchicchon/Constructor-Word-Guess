@@ -7,8 +7,11 @@ var Letter = function(underlyingLetter) {
     this.guessed = false // If the letter has been guessed e.g. True if it was guessed, False if not
     this.letterGuessed = function() { // returns the underlying character if it was guessed, returns the placeholder if not
         if (this.guessed) { // If we are checking a parameter to see its boolean value, we can just check the value itself and itll return true or false
+            console.log(this.letter)
             return this.letter
-        } 
+        } else {
+            console.log('_')
+        }
     }
     this.checkLetter = function(character) { // takes in character and checks it against the underlying character. If it matches, it updates this.guess to true.
         if (character === this.letter) {
